@@ -1,0 +1,7 @@
+{
+  "name": "AppConverterMoeda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
