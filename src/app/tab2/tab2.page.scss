@@ -1,0 +1,39 @@
+#titleUpTab{
+    display: flex;
+    justify-content: space-between;
+}
+#titleCard{
+    box-sizing: border-box;
+    margin: 10px 0 50px 0;
+    padding: 10px;
+    font-size: 14px;
+    // border: 1px solid red;
+}
+
+#contentCard{
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonConversor{
+    width: 100px;
+    margin: 20px auto;
+    font-size: 12px;
+}
+
+label{
+    margin: 12px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    // border: 1px solid red;
+}
+
+select{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+

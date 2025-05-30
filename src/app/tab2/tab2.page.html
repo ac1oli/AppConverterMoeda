@@ -1,7 +1,14 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" >
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      <div id="titleUpTab">
+        <div>
+          App Converterdor de Mueda
+        </div>
+        <div>
+          <button [routerLink]="['/tabs/tab3']">Hist.</button>
+        </div>
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +20,34 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-title id="titleCard">
+      Oque vai querer conventer hoje (nome da pessoa)
+    </ion-title>
+    
+    <ion-card-content id="contentCard">
+
+      <select id="moedaQueVaiConverter" name="moedaQueVaiConverter">
+        <option value="#" label="Mueda que vai Utilizar">Tipos de moeda 0</option>
+        <option value="#">Tipos de moeda 1</option>
+        <option value="#">Tipos de moeda 2</option>
+        <option value="#">Tipos de moeda 3</option>
+      </select>
+      <!-- Criar função para validar se esse campo esta sendo passado um numero, se tiver passando um texto é apra retornar um "ERRO"-->
+      <ion-input label="Valor: " fill="solid" placeholder="Enter value" type="number"></ion-input>
+
+      <ion-button color="secondary" id="buttonConversor">Converter</ion-button>
+
+      <!-- Escolher a moeda a ser convertida pelo valor acima -->
+      <select id="moedaParaConverter" name="moedaParaConverter">
+        <option value="#" label="Mueda a ser Convertida">Tipos de moeda 0</option>
+        <option value="#">Tipos de moeda 1</option>
+        <option value="#">Tipos de moeda 2</option>
+        <option value="#">Tipos de moeda 3</option>
+      </select>
+      <!-- Criar função para validar se esse campo esta sendo passado um numero, se tiver passando um texto é apra retornar um "ERRO"-->
+      <ion-input label="Valor Convertido: " fill="solid" readonly></ion-input>
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>
