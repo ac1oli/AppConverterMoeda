@@ -1,7 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      <div id="titleUpTab">
+        HISTORICO
+        <button [routerLink]="['/tabs/tab2']">Voltar</button>
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +16,5 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <h1 style="text-align: center; font-size: 50px;">HISTORICO</h1>
 </ion-content>
